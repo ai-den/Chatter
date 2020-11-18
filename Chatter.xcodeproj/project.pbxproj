@@ -15,6 +15,8 @@
 		DF902E892565059200952AC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF902E872565059200952AC3 /* LaunchScreen.storyboard */; };
 		DF902E942565059200952AC3 /* ChatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF902E932565059200952AC3 /* ChatterTests.swift */; };
 		DF902E9F2565059200952AC3 /* ChatterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF902E9E2565059200952AC3 /* ChatterUITests.swift */; };
+		DF902EB125650A2800952AC3 /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF902EAF25650A2800952AC3 /* FriendTableViewCell.swift */; };
+		DF902EB225650A2800952AC3 /* FriendTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF902EB025650A2800952AC3 /* FriendTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		DF902E9A2565059200952AC3 /* ChatterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF902E9E2565059200952AC3 /* ChatterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatterUITests.swift; sourceTree = "<group>"; };
 		DF902EA02565059200952AC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF902EAF25650A2800952AC3 /* FriendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTableViewCell.swift; sourceTree = "<group>"; };
+		DF902EB025650A2800952AC3 /* FriendTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FriendTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,9 @@
 			isa = PBXGroup;
 			children = (
 				DF902E7B2565058E00952AC3 /* Chatter */,
+				DF902EB825650A5000952AC3 /* Model */,
+				DF902EB725650A4A00952AC3 /* Controller */,
+				DF902EB625650A3200952AC3 /* View */,
 				DF902E922565059200952AC3 /* ChatterTests */,
 				DF902E9D2565059200952AC3 /* ChatterUITests */,
 				DF902E7A2565058E00952AC3 /* Products */,
@@ -101,8 +108,6 @@
 			children = (
 				DF902E7C2565058E00952AC3 /* AppDelegate.swift */,
 				DF902E7E2565058E00952AC3 /* SceneDelegate.swift */,
-				DF902E802565058E00952AC3 /* ViewController.swift */,
-				DF902E822565058E00952AC3 /* Main.storyboard */,
 				DF902E852565059200952AC3 /* Assets.xcassets */,
 				DF902E872565059200952AC3 /* LaunchScreen.storyboard */,
 				DF902E8A2565059200952AC3 /* Info.plist */,
@@ -126,6 +131,31 @@
 				DF902EA02565059200952AC3 /* Info.plist */,
 			);
 			path = ChatterUITests;
+			sourceTree = "<group>";
+		};
+		DF902EB625650A3200952AC3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DF902EAF25650A2800952AC3 /* FriendTableViewCell.swift */,
+				DF902EB025650A2800952AC3 /* FriendTableViewCell.xib */,
+				DF902E822565058E00952AC3 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DF902EB725650A4A00952AC3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DF902E802565058E00952AC3 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DF902EB825650A5000952AC3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +264,7 @@
 				DF902E892565059200952AC3 /* LaunchScreen.storyboard in Resources */,
 				DF902E862565059200952AC3 /* Assets.xcassets in Resources */,
 				DF902E842565058E00952AC3 /* Main.storyboard in Resources */,
+				DF902EB225650A2800952AC3 /* FriendTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +292,7 @@
 				DF902E812565058E00952AC3 /* ViewController.swift in Sources */,
 				DF902E7D2565058E00952AC3 /* AppDelegate.swift in Sources */,
 				DF902E7F2565058E00952AC3 /* SceneDelegate.swift in Sources */,
+				DF902EB125650A2800952AC3 /* FriendTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
