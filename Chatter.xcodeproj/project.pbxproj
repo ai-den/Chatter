@@ -3,16 +3,19 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		1497751A6721B3BF3C7D0FDD /* Pods_Chatter_ChatterUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74E20974C7EF725A890051E3 /* Pods_Chatter_ChatterUITests.framework */; };
 		28A5D8308DD7181545D4C85A /* Pods_ChatterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C464ECE2C3183E95309C201F /* Pods_ChatterTests.framework */; };
 		8B11FEF140916ECBD22E1413 /* Pods_Chatter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 985C795DA1BD5468F62F512D /* Pods_Chatter.framework */; };
+		DF2565A325664CB500AB636F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2565A225664CB500AB636F /* Constants.swift */; };
+		DF2565A8256687FC00AB636F /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2565A7256687FC00AB636F /* LogInViewController.swift */; };
+		DF2565AD2566880C00AB636F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2565AC2566880C00AB636F /* SignUpViewController.swift */; };
 		DF902E7D2565058E00952AC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF902E7C2565058E00952AC3 /* AppDelegate.swift */; };
 		DF902E7F2565058E00952AC3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF902E7E2565058E00952AC3 /* SceneDelegate.swift */; };
-		DF902E812565058E00952AC3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF902E802565058E00952AC3 /* ViewController.swift */; };
+		DF902E812565058E00952AC3 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF902E802565058E00952AC3 /* WelcomeViewController.swift */; };
 		DF902E842565058E00952AC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF902E822565058E00952AC3 /* Main.storyboard */; };
 		DF902E862565059200952AC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF902E852565059200952AC3 /* Assets.xcassets */; };
 		DF902E892565059200952AC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF902E872565059200952AC3 /* LaunchScreen.storyboard */; };
@@ -50,10 +53,13 @@
 		C464ECE2C3183E95309C201F /* Pods_ChatterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D98F79E511F2797499B58744 /* Pods-Chatter-ChatterUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chatter-ChatterUITests.release.xcconfig"; path = "Target Support Files/Pods-Chatter-ChatterUITests/Pods-Chatter-ChatterUITests.release.xcconfig"; sourceTree = "<group>"; };
 		DEF9C7378A5CD658E952E369 /* Pods-Chatter-ChatterUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chatter-ChatterUITests.debug.xcconfig"; path = "Target Support Files/Pods-Chatter-ChatterUITests/Pods-Chatter-ChatterUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DF2565A225664CB500AB636F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		DF2565A7256687FC00AB636F /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		DF2565AC2566880C00AB636F /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		DF902E792565058E00952AC3 /* Chatter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chatter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF902E7C2565058E00952AC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DF902E7E2565058E00952AC3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DF902E802565058E00952AC3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DF902E802565058E00952AC3 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		DF902E832565058E00952AC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DF902E852565059200952AC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF902E882565059200952AC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -117,7 +123,6 @@
 				4B8FBA785452506E2B0D82B2 /* Pods-ChatterTests.debug.xcconfig */,
 				9A62E5ED889D78BAA25FBC80 /* Pods-ChatterTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -154,6 +159,7 @@
 				DF902E852565059200952AC3 /* Assets.xcassets */,
 				DF902E872565059200952AC3 /* LaunchScreen.storyboard */,
 				DF902E8A2565059200952AC3 /* Info.plist */,
+				DF2565A225664CB500AB636F /* Constants.swift */,
 			);
 			path = Chatter;
 			sourceTree = "<group>";
@@ -189,8 +195,10 @@
 		DF902EB725650A4A00952AC3 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				DF902E802565058E00952AC3 /* ViewController.swift */,
+				DF902E802565058E00952AC3 /* WelcomeViewController.swift */,
 				DF902EC225651AF200952AC3 /* FriendListTableViewController.swift */,
+				DF2565A7256687FC00AB636F /* LogInViewController.swift */,
+				DF2565AC2566880C00AB636F /* SignUpViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -441,11 +449,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF902E812565058E00952AC3 /* ViewController.swift in Sources */,
+				DF902E812565058E00952AC3 /* WelcomeViewController.swift in Sources */,
 				DF902EC325651AF200952AC3 /* FriendListTableViewController.swift in Sources */,
+				DF2565AD2566880C00AB636F /* SignUpViewController.swift in Sources */,
 				DF902E7D2565058E00952AC3 /* AppDelegate.swift in Sources */,
+				DF2565A8256687FC00AB636F /* LogInViewController.swift in Sources */,
 				DF902E7F2565058E00952AC3 /* SceneDelegate.swift in Sources */,
 				DF902EB125650A2800952AC3 /* FriendTableViewCell.swift in Sources */,
+				DF2565A325664CB500AB636F /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
