@@ -6,17 +6,24 @@
 //
 
 import UIKit
+import CLTypingLabel
 
-class ViewController: UIViewController {
+class WelcomeViewController: UIViewController {
 
+
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         
     }
     
     override func viewWillAppear(_ animated: Bool) {
         print("view will appear.")
     }
+    
+    
 
 
 }
